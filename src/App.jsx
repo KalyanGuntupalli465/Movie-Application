@@ -12,8 +12,7 @@ import Explore from './pages/explore/Explore';
 import {PageNotFound} from './pages/404/PageNotFound';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import Register from './components/auth/registration/Registration';
-import Login from './components/auth/login/Login';
+
 
 
 function App() {
@@ -62,9 +61,7 @@ useEffect(()=>{
     <Route path="/" element={<Home/>}  />
     <Route path="/:mediaType/:id" element={<Details/>}  />
     <Route path="/search/:query" element={<SearchResult/>}  />
-    <Route path="/explore/:mediaType" element={<Explore/>}  />
-    <Route path='/register' element={<Register />} />
-    <Route path="/login" element={<Login/>} />
+    <Route path="/explore/:mediaType" element={<Explore/>}  />    
     <Route path="*" element={<PageNotFound/>}  />
   </Routes>
   <Footer/>

@@ -91,7 +91,7 @@ const Header = () => {
           <li className="menuItem">
             <HiOutlineSearch onClick={openSearch} />
           </li>
-          <li className="menuItem" onClick={()=>navigate("/login")}>Login</li>
+          
         </ul>
         <div className="mobileMenuItems">
           <HiOutlineSearch onClick={openSearch} />
